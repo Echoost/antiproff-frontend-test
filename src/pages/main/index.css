@@ -1,0 +1,113 @@
+.main-header {
+    height: 265px;
+    background: rgb(81, 38, 137);
+}
+
+.main-title {
+    font-size: 64px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    @media (max-width: 1200px) {
+        font-size: 58px;
+    }
+    @media (max-width: 768px) {
+        font-size: 36px;
+    }
+}
+
+.main-description {
+    width: 39%;
+    margin: 0 auto;
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    @media (max-width: 1200px) {
+        font-size: 17px;
+    }
+    @media (max-width: 768px) {
+        width: 80%;
+        font-size: 16px;
+    }
+}
+
+.main-button {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main-cards {
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 30px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    box-shadow: 0px 1px 3.98px 0px rgba(51, 51, 51, 0.15);
+    border-radius: 10px;
+    transition: 0.3s all;
+    @media (max-width: 1200px) {
+        width: 35%;
+    }
+    @media (max-width: 768px) {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+.main-card:hover {
+    box-shadow: 0px 4px 7.98px 1px rgba(2, 2, 2, 0.15);
+}
+
+.main-image {
+    border-radius: 100%;
+    width: 124px;
+    height: 124px;
+}
+
+.main-card-name {
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.main-card-like {
+    width: 20px;
+    height: 60px;
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+.main-logout-button {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.main-logout-button-mobile {
+    margin: 23px 27px 0 0;
+    border: 1px dotted #fff;
+    padding: 11px;
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.main-more {
+    display: flex;
+    justify-content: center;
+}

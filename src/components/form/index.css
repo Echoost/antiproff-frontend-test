@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form form {
+    @media (max-width: 480px) {
+        flex-basis: 90%;
+    }
+}
+
+.form-title {
+    font-size: 20px;
+}

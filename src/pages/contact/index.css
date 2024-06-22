@@ -1,0 +1,145 @@
+.contact-header {
+    background: rgb(81, 38, 137);
+    display: flex;
+    min-height: 265px;
+}
+
+.contact-wrapper {
+    width: 91%;
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+    margin-top: 32px;
+}
+
+.contact-information {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+}
+
+.contact-text {
+    margin-left: 32px;
+    @media (max-width: 768px) {
+        margin: 0;
+    }
+}
+
+.contact-name {
+    font-size: 64px;
+    color: #fff;
+    @media (max-width: 992px) {
+        font-size: 50px;
+    }
+    @media (max-width: 768px) {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+.contact-position {
+    font-size: 32px;
+    color: #fff;
+    @media (max-width: 768px) {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 16px;
+    }
+}
+
+.contact-image {
+    border-radius: 100%;
+    width: 187px;
+    height: 187px;
+    @media (max-width: 768px) {
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+}
+
+.contact-main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 49px;
+    gap: 130px;
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        gap: 34px;
+    }
+}
+
+.contact-text-block {
+    width: 60%;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.contact-description {
+    @media (max-width: 992px) {
+        font-size: 14px;
+    }
+}
+.contact-description:not(:first-child) {
+    margin-top: 20px;
+}
+.contact-email {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-phone {
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-logout-button {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-back-button {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-logout-button-mobile {
+    width: 18px;
+    height: 18px;
+    padding: 11px;
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-back-button-mobile {
+    width: 40px;
+    height: 40px;
+    border: 1px dotted #fff;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-phone-link {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s all;
+}
+
+.contact-phone-link:hover {
+    color: rgb(190, 155, 236);
+}

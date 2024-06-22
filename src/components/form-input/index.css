@@ -1,0 +1,46 @@
+input {
+    width: 452px;
+    height: 48px;
+    border-radius: 8px;
+    padding-left: 16px;
+    border: none;
+    margin-top: 8px;
+    @media (max-width: 480px) {
+        width: 95%;
+    }
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.form-textarea {
+    position: relative;
+}
+
+.form-image {
+    position: absolute;
+    right: 2%;
+    top: 40%;
+    cursor: pointer;
+}
+
+input:invalid[focused='true'] ~ .form-image {
+    top: 28%;
+}
+
+span {
+    margin-top: 3px;
+    color: rgb(255, 97, 97);
+    display: none;
+}
+
+input:invalid[focused='true'] {
+    border: 1px solid rgb(255, 97, 97);
+}
+
+input:invalid[focused='true'] ~ span {
+    display: block;
+}
