@@ -53,7 +53,7 @@ export const Main = () => {
                     </Button>
                     <img
                         className="main-logout-button-mobile"
-                        src="../src/assets/icons/logout-mobile.svg"
+                        src="/icons/logout-mobile.svg"
                         alt="logout button"
                         onClick={handleLogout}
                     />
@@ -73,7 +73,11 @@ export const Main = () => {
                         key={card.id}
                         className="main-card"
                     >
-                        <img className="main-image" src={card.avatar} />
+                        <img
+                            className="main-image"
+                            src={card.avatar}
+                            alt="card of person"
+                        />
                         <p className="main-card-name">
                             {card.first_name} {card.last_name}
                         </p>
@@ -82,10 +86,11 @@ export const Main = () => {
                             id={card.id.toString()}
                             onClick={handleFavourite}
                             className="main-card-like"
+                            alt="like button"
                             src={
                                 isFavourite(card.id)
-                                    ? '../src/assets/icons/like-active.svg'
-                                    : '../src/assets/icons/like.svg'
+                                    ? '/icons/like-active.svg'
+                                    : '/icons/like.svg'
                             }
                         />
                     </Link>
@@ -94,11 +99,15 @@ export const Main = () => {
             {!isShowed && (
                 <div className="main-more">
                     <Button
+                        className="main-button-more"
                         onClick={handleMore}
                         width="170px"
-                        margin="56px 0 0 0"
                     >
-                        Показать еще
+                        Показать еще{' '}
+                        <img
+                            className="main-more-arrow"
+                            src="/icons/arrow-down.svg"
+                        />
                     </Button>
                 </div>
             )}

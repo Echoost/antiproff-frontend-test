@@ -40,7 +40,7 @@ export const FormInput = (props: FormInputProps) => {
                     <img
                         onClick={handleShowPassword}
                         className="form-image"
-                        src="../src/assets/icons/eye.svg"
+                        src="/icons/eye.svg"
                     />
                 )}
                 <span>{errorMessage}</span>

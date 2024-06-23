@@ -79,6 +79,7 @@
     width: 60%;
     @media (max-width: 768px) {
         width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -127,7 +128,7 @@
 .contact-back-button-mobile {
     width: 40px;
     height: 40px;
-    border: 1px dotted #fff;
+    border: 1px dashed #fff;
 
     @media (min-width: 768px) {
         display: none;

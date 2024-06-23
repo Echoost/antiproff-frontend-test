@@ -53,7 +53,7 @@ export const Contact = () => {
                     </Button>
                     <img
                         className="contact-back-button-mobile"
-                        src="../src/assets/icons/arrow-back-mobile.svg"
+                        src="/icons/arrow-back-mobile.svg"
                         alt="back button"
                         onClick={handleBack}
                     />
@@ -79,7 +79,7 @@ export const Contact = () => {
                     </Button>
                     <img
                         className="contact-logout-button-mobile"
-                        src="../src/assets/icons/logout-mobile.svg"
+                        src="/icons/logout-mobile.svg"
                         alt="logout button"
                         onClick={handleLogout}
                     />
@@ -118,17 +118,11 @@ export const Contact = () => {
                 </div>
                 <div className="contact-contacts">
                     <div className="contact-email">
-                        <img
-                            src="../src/assets/icons/email.svg"
-                            alt="email icon"
-                        />
+                        <img src="/icons/email.svg" alt="email icon" />
                         <p>{data.email}</p>
                     </div>
                     <div className="contact-phone">
-                        <img
-                            src="../src/assets/icons/phone.svg"
-                            alt="phone icon"
-                        />
+                        <img src="/icons/phone.svg" alt="phone icon" />
                         <a
                             className="contact-phone-link"
                             href="tel:+7 (954) 333-44-55"
